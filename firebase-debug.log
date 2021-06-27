@@ -1,0 +1,79 @@
+[debug] [2021-06-27T19:05:22.751Z] ----------------------------------------------------------------------
+[debug] [2021-06-27T19:05:22.754Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bruno\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-06-27T19:05:22.754Z] CLI Version:   9.14.0
+[debug] [2021-06-27T19:05:22.755Z] Platform:      win32
+[debug] [2021-06-27T19:05:22.755Z] Node Version:  v14.17.1
+[debug] [2021-06-27T19:05:22.756Z] Time:          Sun Jun 27 2021 16:05:22 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-06-27T19:05:22.756Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-27T19:05:22.765Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-27T19:05:22.766Z] > authorizing via signed-in user (brunoortega11@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\bruno\codes\letmeask
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-06-27T19:06:28.036Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-06-27T19:06:29.120Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-06-27T19:06:29.120Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project letmeask-bdb41 (letmeask) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-06-27T19:06:34.055Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-27T19:06:34.055Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-27T19:06:34.226Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 27 Jun 2021 19:06:34 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-27T19:06:34.232Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/letmeask-bdb41/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-06-27T19:06:35.303Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 27 Jun 2021 19:06:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-06-27T19:06:35.304Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/letmeask-bdb41/locations/-/instances/letmeask-bdb41-default-rtdb  
+ 
+[debug] [2021-06-27T19:06:36.498Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 27 Jun 2021 19:06:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-06-27T19:06:49.082Z] >>> HTTP REQUEST GET https://letmeask-bdb41-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-06-27T19:06:49.719Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sun, 27 Jun 2021 19:06:49 GMT","content-type":"application/json; charset=utf-8","content-length":"571","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for letmeask-bdb41-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\bruno\codes\letmeask is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=537701756&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-06-27T19:07:09.667Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"eddd0fd8369d0c7f7361","redirect_uri":"http://localhost:9005","state":"537701756"}
+[debug] [2021-06-27T19:07:10.182Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sun, 27 Jun 2021 19:07:10 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"210db24cdd18f1075468fa5f548e6f2f\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"EC6D:0507:1D086FD:2531BE5:60D8CC5D"}
+[debug] [2021-06-27T19:07:10.184Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-06-27T19:07:10.773Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-06-27T19:07:10.773Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"brunoortega","id":52842771,"node_id":"MDQ6VXNlcjUyODQyNzcx","avatar_url":"https://avatars.githubusercontent.com/u/52842771?v=4","gravatar_id":"","url":"https://api.github.com/users/brunoortega","html_url":"https://github.com/brunoortega","followers_url":"https://api.github.com/users/brunoortega/followers","following_url":"https://api.github.com/users/brunoortega/following{/other_user}","gists_url":"https://api.github.com/users/brunoortega/gists{/gist_id}","starred_url":"https://api.github.com/users/brunoortega/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/brunoortega/subscriptions","organizations_url":"https://api.github.com/users/brunoortega/orgs","repos_url":"https://api.github.com/users/brunoortega/repos","events_url":"https://api.github.com/users/brunoortega/events{/privacy}","received_events_url":"https://api.github.com/users/brunoortega/received_events","type":"User","site_admin":false,"name":"brunoortega","company":"UFSCar","blog":"","location":"São Paulo - SP - Brasil","email":"brunoortega11@gmail.com","hireable":null,"bio":"I'm from São Paulo - SP, Electrical Engineering from Universidade Federal de São Carlos,\r\n very interested on IT since the beginning of highschool.","twitter_username":null,"public_repos":9,"public_gists":0,"followers":5,"following":2,"created_at":"2019-07-13T00:36:31Z","updated_at":"2021-06-27T19:07:09Z","private_gists":0,"total_private_repos":2,"owned_private_repos":1,"disk_usage":1410,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as brunoortega 
+[info] 
+[debug] [2021-06-27T19:08:15.607Z] >>> [apiv2][query] GET https://api.github.com/repos/brunoortega/letmeask/actions/secrets/public-key type=owner
+[debug] [2021-06-27T19:08:16.115Z] <<< [apiv2][status] GET https://api.github.com/repos/brunoortega/letmeask/actions/secrets/public-key 404
+[debug] [2021-06-27T19:08:16.115Z] <<< [apiv2][body] GET https://api.github.com/repos/brunoortega/letmeask/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
